@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <script src="myjs.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
             <link rel="shortcut icon" href="images/favicon.ico" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -9,45 +11,160 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
             <title>WWSW</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    #logo, #newArrivals {
-  background-color: white;
-  font-family: 'Shrikhand', cursive;;
-  font-size: 40px;
-  overflow: hidden;
-}
-
-.topnav {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-</style>
-
-
-
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <style>
+                *{
+                    text-align: center;
+                }
+            </style>
+    
+    
+    
         </head>
+
 <header>
+    <!-- Women's, Men's, Gifts, Home, Lifestyle, Sale (dropdowns)--> 
     <div class="topnav">
         <span id = "logo"> <a href="home.html">weWearStreetwear </a>&emsp;</span> 
-        <a class="active" href="directory.html">Women's</a>
-        <a href="directory.html">Men's</a>
-        <a href="directory.html">Gifts</a>
-        <a href="directory.html">Home</a>
-        <a href="directory.html">Lifestyle</a>
-        <a href="directory.html">Sale</a> &emsp;
+
+        <div class="subnav">
+        <button class="subnavbtn">Women's<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="womensTops.html">Tops</a>
+            <a href="womensDresses.html">Dresses</a>
+          </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Men's<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="mensTops.html">Tops</a>
+                <a href="accessories.html">Accessories</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Sale<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                  <a href="womensDresses.html">Women's</a>
+                  <a href="mensPants.html">Men's</a>
+                </div>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+            </div>
+
         <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
-       <hr>
- 
-</header>
-<body>
+    </header>
+    <body> 
+        <!-------Count Down Till Xmas--------------->
+        <div class="countdown">
+            <p id="demo"></p>
+            <center>Until Christmas!</center></div><br><br>
 
-    <h3>Shipping and Payment Review</h3>>
+              <form>
+                <table>
+                    <tr>
+                        <td>
+                            Country:
+                        </td>
+                        <td>
+                            <input type="text" Country=" ">
+                        </td>
+                    </tr>
+             
+                    <tr>
+                        <td>
+                            First and Last Name:
+                        </td>
+                        <td>
+                            <input type ="text" First and Last Name=" ">
+                    <tr>
+             
+                        <td>
+                            Street:
+                        </td>
+                        <td>
+                            <input type ="text" Street=" ">
+                        </td>
+                        <td>
+                            City:
+                        </td>
+                        <td>
+                            <input type="text" City=" ">
+                        </td>
+                        <td>
+                            State:
+                        </td>
+                        <td>
+                            <input type="text" State=" ">
+                        </td>
+                        <td>
+                            Zipcode:
+                        </td>
+                        <td>
+                            <input type="number" Zipcode=" ">
+                        </td>
+                    <tr>
+                        <td>
+                            Phone number:
+                        </td>
+                        <td>
+                            <input type="number"Phone Number="" >
+                        </td>
+                    </tr>
+                </table>
+             </form>
+             <br><br><br><br>
+             <h3>Payment review</h3>
+             <form action="action">
+                <label for="name">Name</label> <br>
+                <input type="text" name="Name" id="name" placeholder="Enter Name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Email"><br>
+                <label for="number"> Card Number</label><br>
+                <input type="number" name="number" id="number" placeholder="1234 1234 1234 1234"><br>
+                <label for="month"> Card Expiry Month</label><br>
+                <input type="month" name="month"id="month" placeholder="MM"><br>
+                <label for="year" >Card Expiry year</label><br>
+                <input type="year" name="year" id="year" placeholder="yyyy"><br>
+                <label for="cvc">Card CVC</label><br>
+                <input type="cvc" name="cvc" id="cvc" placeholder="cvc"><br>
+                <button type="button">Pay Now</button>
+                <button type="button">Close</button>
+             </form>
+             <br>
+             <br>
+             <h3>Order Summary</h3>
+             
+             <div class="col-30">
+                <div class="container">
+                    <h4>Cart
+                        <span class="price" style="color:black">
+                      <i class="fa fa-shopping-cart"></i>
+                      <b>4</b>
+                    </span>
+                    </h4>
+                    <p><a href="#">Item 1</a> <span class="price">$</span></p>
+                    <p><a href="#">Item 2</a> <span class="price">$</span></p>
+                    <p><a href="#">Item 3</a> <span class="price">$</span></p>
+                    <p><a href="#">Item 4</a> <span class="price">$</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$</b></span></p>
+                </div>
+             </div> 
+              <form class="cards p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="customer's name" aria-describedby="basic-addon2" placeholder="Discount code" >
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary btn-md waves-effect m-0" type="button">Redeem Code</button>
+                        </div> <br><br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadress"> Shipping address same as billing
+                        </label> <br><br>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form> 
+                    </div>
+                
+             
 
 
-<!-- form to full out Country, name, Street, City, State, zipcode, phone-->
-<!-- ApplePay, Google, PayPal, Bitcoin-->
-<!--Order Summary: Total with shipping-->
-
-<!--Success page-->
-    </body>
-    </html>
+            </body>
