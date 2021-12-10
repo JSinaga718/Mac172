@@ -14,9 +14,24 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
     
             <style>
-                *{
+                *{ 
                     text-align: center;
                 }
+               .address{
+                   padding-left: 200px; 
+                   border-style: dashed;
+                   border:rgb(189, 41, 41);
+               }
+               .payment{
+                padding-left: 200px; 
+                float:left;
+               }
+               .orderSum{
+                   float:right;
+                   padding-right:300px;
+               }
+            
+          
             </style>
     
     
@@ -59,7 +74,7 @@
         <div class="countdown">
             <p id="demo"></p>
             <center>Until Christmas!</center></div><br><br>
-
+                <div class="address">
               <form>
                 <table>
                     <tr>
@@ -112,8 +127,9 @@
                         </td>
                     </tr>
                 </table>
-             </form>
-             <br><br><br><br>
+             </form> </div>
+            <hr>
+             <div class="payment">
              <h3>Payment review</h3>
              <form action="action">
                 <label for="name">Name</label> <br>
@@ -130,11 +146,9 @@
                 <input type="cvc" name="cvc" id="cvc" placeholder="cvc"><br>
                 <button type="button">Pay Now</button>
                 <button type="button">Close</button>
-             </form>
-             <br>
-             <br>
+             </form></div>
+             <div class="orderSum">
              <h3>Order Summary</h3>
-             
              <div class="col-30">
                 <div class="container">
                     <h4>Cart
@@ -159,10 +173,14 @@
                         </div> <br><br>
                         <label>
                             <input type="checkbox" checked="checked" name="sameadress"> Shipping address same as billing
-                        </label> <br><br>
+                        </label> 
+                    </div>   
+                <br>
+                
+                <centeR><div class="checkout">
                         <input type="submit" value="Continue to checkout" class="btn">
                     </form> 
-                    </div>
+                </div></centeR><br>
                 
              
 

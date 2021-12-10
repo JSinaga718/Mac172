@@ -6,6 +6,7 @@ body {
     background-color: rgb(105, 84, 105);
 }
 
+
 #logo, #newArrivals {
   font-family: 'Shrikhand', cursive;
   font-size: 40px;
@@ -119,13 +120,15 @@ body {
     outline: none;
     color: black;
     padding: 14px 16px;
-    background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
   
   /* Add a red background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
+  .subnavbtn:hover {
+    background-color: rgb(189, 41, 41);
+  }
+  .topnav a:hover {
     background-color: rgb(189, 41, 41);
   }
   
@@ -148,7 +151,7 @@ body {
   
   /* Add a grey background color on hover */
   .subnav-content a:hover {
-    background-color: #eee;
+    background-color: rgb(189, 41, 41);
     color: black;
   }
   
